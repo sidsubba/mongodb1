@@ -24,6 +24,7 @@ exports.new =function(req,res)
     var contact=new Contact();
     contact.name=req.body.name;
     contact.place=req.body.place;
+    contact.email=req.body.email;
     contact.save(function(err)
     {
         if(err)
