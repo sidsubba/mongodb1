@@ -12,6 +12,11 @@ var exampleSchema = mongoose.Schema({
         type:String,
         required:true
     }
+    email:
+    {
+       type:String,
+       required:true
+}
 });
 var Contact=module.exports=mongoose.model('contact',exampleSchema);
 module.exports.get = function (callback, limit) {
