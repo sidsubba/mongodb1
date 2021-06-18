@@ -12,13 +12,13 @@ var exampleSchema = mongoose.Schema({
         type:String,
         required:true
     },
-    email:
+    prof:
     {
        type:String,
        required:true
 }
 });
-var Contact=module.exports=mongoose.model('contact',exampleSchema);
+var Contact1=module.exports=mongoose.model('newcontact',exampleSchema);
 module.exports.get = function (callback, limit) {
-    Contact.find(callback).limit(limit);
+    Contact1.find(callback).limit(limit);
 }
